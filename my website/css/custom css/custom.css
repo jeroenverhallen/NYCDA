@@ -1,26 +1,73 @@
-
-
+html,body{
+	padding:0;
+	margin:0;
+}
+body{
+	background-color: lightgreen
+}
 .jumbotron {
 	background: turquoise;
+    width:100%;
+  height:auto;
+  -moz-filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+  -webkit-filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+  -o-filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+  -ms-filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+  filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
 }
-
-.className1 {
-	background-image: url("../../images/Lolly.jpg");
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-    background-size: cover;
 }
-
-.className2 {
-	width: 10%; height: 10%;
+html,body{
+	height:100%;
 }
-
+.photocontainer{
+	float:left;
+	margin:10px;
+	width:150px;
+	height:150px;
+}
 .introduction img {
-	float: left;
-	border-radius: 180 px;
+	width: 20%;
+	height: 20%;
+    float: left;
+    margin-bottom: 10px;
+    padding-left: 0;
+    border-radius: 160px/190px;
+  height:auto;
+  -moz-filter: drop-shadow(16px 16px 10px black);
+  -webkit-filter: drop-shadow(16px 16px 10px black);
+  -o-filter: drop-shadow(16px 16px 10px black);
+  -ms-filter: drop-shadow(16px 16px 10px black);
+  filter: drop-shadow(16px 16px 10px black);
 }
-
+div.spin{
+    -webkit-animation: spin 3s 3 linear;
+	animation: spin 3s 3 linear;
+}
+@-webkit-keyframes spin {
+	0%  {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+	0%  {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}	
+}
+div.circle{
+    position: relative;
+    -webkit-animation: myfirst 1.5s linear 6 normal;
+    animation: myfirst 1.5s linear 6 normal;
+}
+@-webkit-keyframes myfirst {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+@keyframes myfirst {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
 .introduction p {
 	float: left;
 }
@@ -31,4 +78,38 @@
 
 #moreContent {
 	display: none;
+}
+#readLess {
+	display: none;
+}
+
+.contactDetails {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 10px;
+    margin: 20px 10px;
+}
+
+.contactDetails a {
+    color: red;
+}
+
+.contactDetails a:hover {
+    color: green;
+    text-decoration: line-through;
+}
+
+.contactDetails a:visited {
+    color: lightpink;
+}
+#catPhoto {
+	background:#333 url("../../images/Lolly.jpg") no-repeat center center;
+}
+#mePhoto {
+	background:#333 url("../../images/jeroen-foto.jpg") no-repeat center center;
+}
+#randomCat {
+	background:#333 url("../../images/cats1.jpg") no-repeat center center;
 }
